@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 datos = {'id':'3670', 'key':'true', 'holdthedoor':'\n'}
 url = 'http://158.69.76.135/level1.php'
 
-for i in range(1024):
+for i in range(4096):
     new_session = requests.Session()
     r = new_session.get(url)
     text = BeautifulSoup(r.text, 'html.parser')
